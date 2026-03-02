@@ -12,7 +12,7 @@ function getPlayerChoice() {
     if (['rock', 'paper', 'scissors'].includes(choice)) {
         return choice;
     } else {
-        alert("Invalid choice. Please enter rock, paper, or scissors.");
+        console.log("Invalid choice. Please enter rock, paper, or scissors.");
         return getPlayerChoice();
     }
 }
