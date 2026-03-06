@@ -1,6 +1,5 @@
 
 
-
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -37,12 +36,6 @@ function game() {
                 computerScore++
                 return `You lose! ${computerSelection} beats ${playerSelection}.`;
             }
-        }
-        for (let i = 0; i < 5; i++) {
-            const playerChoice = getPlayerChoice();
-            const computerChoice = getComputerChoice();
-            const result = playRound(playerChoice, computerChoice)
-            console.log(`Round ${i + 1}: ${result}`);
         }
         console.log(`Final Score - You: ${humanScore}, Computer: ${computerScore}`);
 }
